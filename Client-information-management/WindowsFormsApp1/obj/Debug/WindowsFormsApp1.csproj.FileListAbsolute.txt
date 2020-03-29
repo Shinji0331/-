@@ -1,0 +1,9 @@
+C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources

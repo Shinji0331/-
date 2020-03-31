@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace WindowsFormsApp1
 {
@@ -16,6 +17,16 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        //*************************************************************************************
+        //画面移動用のDLL
+        //*************************************************************************************
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd,int wmsg,int wparam,int lparam);
+
+
         //*************************************************************************************
         //メニューボタンクリック
         //*************************************************************************************
@@ -52,7 +63,35 @@ namespace WindowsFormsApp1
             //最大化ボタンを非表示
             iconmaximizar.Visible = false;
         }
+        //*************************************************************************************
+        //最大化解除ボタンクリック
+        //*************************************************************************************
+        private void iconrestaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            iconrestaurar.Visible = false;
+            iconmaximizar.Visible = true;
+        }
+        //*************************************************************************************
+        //最小化ボタンクリック
+        //*************************************************************************************
+        private void iconminimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
 
+        //*************************************************************************************
+        //マウス操作から画面が動かせるようにする
+        //*************************************************************************************
+        private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
 
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

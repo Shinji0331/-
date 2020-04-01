@@ -32,13 +32,13 @@ namespace WindowsFormsApp1
         //*************************************************************************************
         private void btnslide_Click(object sender, EventArgs e)
         {
-            if (MenuVertical.Width == 250){
+            if (MenuVertical.Width == 150){
                 //サイドバー幅が250の際は70に変更
-                MenuVertical.Width = 70;
+                MenuVertical.Width = 45;
             }
             else
                 //上記以外の際は70に変更
-                MenuVertical.Width = 250;
+                MenuVertical.Width = 150;
         }
 
         //*************************************************************************************
@@ -88,10 +88,39 @@ namespace WindowsFormsApp1
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        //*************************************************************************************
+        //パネルへのフォーム表示関数
+        //*************************************************************************************
+        
+        private void AbrirFormInPanel(object Formhijo)
         {
+            //パネルに既に表示されているフォームを削除する。
+            if (this.panelContenedor.Controls.Count > 0)
+            {
+                this.panelContenedor.Controls.RemoveAt(0);
+            }
+            //引数のフォームのインスタンス作成
+            Form fh = Formhijo as Form;
 
+            //フォームをトップレベルで表示しない
+            fh.TopLevel = false;
+
+            //幅を揃える
+            fh.Dock = DockStyle.Fill;
+
+            //パネルにフォームを追加
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+
+            //フォーム表示
+            fh.Show();
+        }
+        //*************************************************************************************
+        //検索ボタン
+        //*************************************************************************************
+        private void btnSerch_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmSerch());
         }
     }
 }

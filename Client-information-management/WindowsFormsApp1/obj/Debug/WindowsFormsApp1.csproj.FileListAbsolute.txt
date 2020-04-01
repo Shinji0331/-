@@ -7,3 +7,4 @@ C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Cl
 C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\shinji\Desktop\work\患者情報管理\Client-information-management\Client-information-management\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmSerch.resources

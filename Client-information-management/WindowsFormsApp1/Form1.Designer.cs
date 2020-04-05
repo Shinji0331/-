@@ -54,7 +54,7 @@
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(150, 650);
+            this.MenuVertical.Size = new System.Drawing.Size(150, 726);
             this.MenuVertical.TabIndex = 0;
             // 
             // btnSerch
@@ -86,7 +86,7 @@
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(150, 0);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1150, 50);
+            this.BarraTitulo.Size = new System.Drawing.Size(1150, 44);
             this.BarraTitulo.TabIndex = 0;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
@@ -148,7 +148,8 @@
             this.btnslide.Image = ((System.Drawing.Image)(resources.GetObject("btnslide.Image")));
             this.btnslide.Location = new System.Drawing.Point(6, 8);
             this.btnslide.Name = "btnslide";
-            this.btnslide.Size = new System.Drawing.Size(42, 36);
+            this.btnslide.Size = new System.Drawing.Size(21, 24);
+            this.btnslide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnslide.TabIndex = 0;
             this.btnslide.TabStop = false;
             this.btnslide.Click += new System.EventHandler(this.btnslide_Click);
@@ -156,16 +157,16 @@
             // panelContenedor
             // 
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(150, 50);
+            this.panelContenedor.Location = new System.Drawing.Point(150, 44);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1150, 600);
+            this.panelContenedor.Size = new System.Drawing.Size(1150, 682);
             this.panelContenedor.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 650);
+            this.ClientSize = new System.Drawing.Size(1300, 726);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.MenuVertical);
